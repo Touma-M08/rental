@@ -1,6 +1,6 @@
 {
-    "name": "tintai",
-    "short_name": "tint",
+    "name": "賃貸",
+    "short_name": "賃貸",
     "start_url": "/",
     "background_color": "#6777ef",
     "description": "Tutorial of Laravel Package",
