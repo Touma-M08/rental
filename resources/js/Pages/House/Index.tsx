@@ -27,7 +27,7 @@ const Index:FC<Props> = ({houses, sort}) => {
         <div className="bg-blue-100 h-screen">
             <SortBar state={flag} inputFlag={(e:boolean) => inputFlag(e)}></SortBar>
             <p className="font-bold p-6 pb-2 text-xl">{sort ? sort : "新しい順"}</p>
-            <div className="mb-16">
+            <div className="pb-16">
                 {houses.map((house:ShowHouse) => (
                     <div key={house.id} className="rounded-xl relative m-3 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <Link href={route("house.edit", house.id)}>
