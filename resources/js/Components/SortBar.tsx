@@ -72,8 +72,8 @@ const SortBar = ({state, inputFlag}:any) => {
                             </span>
                         </button>
                     </nav>
-                    <div className="text-center mt-10">
-                        <button onClick={(e) => inputFlag(false)} className="mr-0 bg-gray-100 p-3 rounded-lg my-6">閉じる</button>
+                    <div className="text-center mt-6">
+                        <button onClick={(e) => inputFlag(false)} className="mr-0 bg-gray-100 p-3 rounded-lg">閉じる</button>
                     </div>
                 </div>
             </div>
