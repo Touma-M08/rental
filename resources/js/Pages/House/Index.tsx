@@ -24,7 +24,7 @@ const Index:FC<Props> = ({houses, sort}) => {
         setFlag(flag);
     }
     return (
-        <div className="bg-blue-100 h-screen">
+        <div className="bg-blue-100 h-full min-h-screen">
             <SortBar state={flag} inputFlag={(e:boolean) => inputFlag(e)}></SortBar>
             <p className="font-bold p-6 pb-2 text-xl">{sort ? sort : "新しい順"}</p>
             <div className="pb-16">

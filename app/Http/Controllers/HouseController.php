@@ -59,8 +59,10 @@ class HouseController extends Controller
                 "minutes" => $station[1],
                 "house_id" => $house->id,
             ];
+            if($value["name"] != "" && $value["minutes"] != "") {
             $add_station = new Station;
             $add_station->fill($value)->save();
+            }
         }
 
         return redirect(route("house.index"));
@@ -86,14 +88,14 @@ class HouseController extends Controller
 
         $input = $request->only("stations");
         foreach($input["stations"] as $station) {
-                $value = [
-                    "name" => $station[0],
-                    "minutes" => $station[1],
-                    "house_id" => $house->id,
-                ];
-            if($value["name"] != null && $value["minutes"] != null) {    
-                $add_station = new Station;
-                $add_station->fill($value)->save();
+            $value = [
+                "name" => $station[0],
+                "minutes" => $station[1],
+                "house_id" => $house->id,
+            ];
+            if($value["name"] != "" && $value["minutes"] != "") {
+            $add_station = new Station;
+            $add_station->fill($value)->save();
             }
         }
 
