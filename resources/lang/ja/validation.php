@@ -160,7 +160,7 @@ return [
         "rent" => "家賃",
         "url" => "URL",
         "mayu_minutes" => "所要時間",
-        "toma_minuntes" => "所要時間",
+        "toma_minutes" => "所要時間",
         "rate" => "評価",
     ],
 

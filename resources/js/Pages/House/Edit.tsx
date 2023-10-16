@@ -27,8 +27,8 @@ const Edit:FC<Props> = ({house, cities, floors}) => {
         stations: [["",""]],
         rent: house.rent,
         url: house.url,
-        mayu_minutes: house.mayu_minutes,
-        toma_minutes: house.toma_minutes,
+        mayu_minutes: house.mayu_minutes ? house.mayu_minutes : undefined,
+        toma_minutes: house.toma_minutes ? house.toma_minutes : undefined,
         rate: house.rate,
         memo: house.memo
     });
