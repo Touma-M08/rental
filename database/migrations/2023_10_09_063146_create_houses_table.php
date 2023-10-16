@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string("name");
             $table->foreignId("city_id")->constraint("city");
             $table->foreignId("floor_id")->constraint("floors");
-            $table->integer("rent");
+            $table->double("rent", 4,1);
             $table->string("url");
             $table->integer("mayu_minutes")->nullable();
             $table->integer("toma_minutes")->nullable();
