@@ -86,13 +86,12 @@ class HouseController extends Controller
 
         $input = $request->only("stations");
         foreach($input["stations"] as $station) {
-            if($value["name"] != "" && $value["minutes"] != "") {
                 $value = [
                     "name" => $station[0],
                     "minutes" => $station[1],
                     "house_id" => $house->id,
                 ];
-                
+            if($value["name"] != null && $value["minutes"] != null) {    
                 $add_station = new Station;
                 $add_station->fill($value)->save();
             }
